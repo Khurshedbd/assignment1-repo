@@ -1,0 +1,494 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #1a1a1a;
+}
+
+.logo {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.btn {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #e68900;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
+/* Banner Section */
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+/* Left Content */
+.banner-content {
+    flex: 1;
+    max-width: 50%;
+}
+
+.banner-content h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.banner-content h2 {
+    font-size: 24px;
+    color: #666;
+}
+
+.banner-content p {
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.btn-alt {
+    background-color: #4CAF50;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* Right Image */
+.banner-image {
+    flex: 1;
+    text-align: right;
+}
+
+.banner-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner-content {
+        max-width: 100%;
+    }
+
+    .banner-image {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+/* Clients Section */
+.clients {
+    text-align: center;
+    padding: 50px;
+    background-color: #f8f8f8;
+}
+
+.clients h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Client Card Grid */
+.client-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Individual Client Card */
+.client-card {
+    width: 250px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.client-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.client-card p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .client-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .client-card {
+        width: 90%;
+    }
+}
+
+/* Blockchain Power Section */
+.blockchain-power {
+    text-align: center;
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+.blockchain-power h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Grid Layout */
+.power-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Individual Item */
+.power-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.power-item h3 {
+    font-size: 24px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.power-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .power-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Helping Blockchain Section */
+.helping-blockchain {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f8f8f8;
+}
+
+/* Image Styling */
+.helping-image {
+    flex: 1;
+    text-align: center;
+}
+
+.helping-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Content Styling */
+.helping-content {
+    flex: 1;
+    max-width: 50%;
+}
+
+.helping-content h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.helping-content p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .helping-blockchain {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .helping-content {
+        max-width: 100%;
+    }
+
+    .helping-image {
+        margin-bottom: 20px;
+    }
+}
+
+/* Blockchain Future Section */
+.blockchain-future {
+    text-align: center;
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+.blockchain-future h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Card Layout */
+.future-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Individual Card */
+.future-card {
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer
+
+
+/* Contact Us Section */
+.contact {
+    padding: 50px;
+    background-color: #f8f8f8;
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Contact Image */
+.contact-image {
+    flex: 1;
+    text-align: center;
+}
+
+.contact-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Contact Form */
+.contact-form {
+    flex: 1;
+    max-width: 50%;
+}
+
+.contact-form h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-form {
+        max-width: 100%;
+    }
+
+    .contact-image {
+        margin-bottom: 20px;
+    }
+}
+
+/* Footer Section */
+.footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Footer Logo */
+.footer-logo h2 {
+    font-size: 24px;
+}
+
+.footer-logo p {
+    font-size: 16px;
+    color: #ccc;
+}
+
+/* Footer Links */
+.footer-links h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Social Media Icons */
+.footer-social h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-social a img {
+    width: 30px;
+    margin: 5px;
+}
+
+/* Copyright Text */
+.footer-copyright {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
